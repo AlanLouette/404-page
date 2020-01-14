@@ -1,0 +1,71 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#Titre {
+    margin: 0;
+    font-size: 64px;
+}
+
+#Corps {
+    color: white;
+    background-color: black;
+    background-image: url(http://droidsoft.fr/wordpress/wp-content/uploads/2012/10/black-wood.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 2em;
+}
+
+#bloc1 {
+    width: 80%;
+}
+
+#Chien {
+    width: 40%;
+    margin-left: 4em;
+    float: right;
+    animation-name: pulse;
+    animation-duration: 4s;
+    border-width: 2px;
+}
+
+@-webkit-keyframes pulse {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes pulse {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.pulse {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+}
